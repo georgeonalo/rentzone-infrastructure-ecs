@@ -20,3 +20,22 @@ variable "database_snapshot_identifier" {}
 variable "database_instance_class" {}
 variable "database_instance_identifier" {}
 variable "multi_az_deployment" {}
+
+# acm variables
+variable "domain_name" {}
+variable "alternative_names" {}
+
+# alb variables
+variable "target_type" {}
+
+# s3 variables
+variable "env_file_bucket_name" {}
+variable "env_file_name" {}
+
+# ecs varaiables
+variable "architecture" {}
+variable "container_image" {}
+
+# route-53 variables
+variable "record_name" {}
+

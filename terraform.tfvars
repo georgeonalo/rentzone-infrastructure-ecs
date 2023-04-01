@@ -18,3 +18,22 @@ database_snapshot_identifier = "rentzone-ecs-final-snapshot"
 database_instance_class      = "db.t2.micro"
 database_instance_identifier = "dev-rds-db"
 multi_az_deployment          = "false"
+
+# acm variables
+domain_name       = "georgenal.xyz"
+alternative_names = "*.georgenal.xyz"
+
+# alb variables
+target_type = "ip"
+
+# s3 variables
+env_file_bucket_name = "george89-ecs-env-file-bucket"
+env_file_name        = "rentzone.env"
+
+
+# ecs varaiables
+architecture    = "X86_64"
+container_image = "910883278292.dkr.ecr.us-east-1.amazonaws.com/rentzone:latest"
+
+# route-53 variables
+record_name = "www"
